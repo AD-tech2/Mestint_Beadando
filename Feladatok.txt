@@ -1,0 +1,23 @@
+1. Személy: Képfeldolgozás és AI (A "Szem") - Ádám
+
+    Felelős a lefotózott papírvázlatok OpenCV segítségével történő előkészítéséért (zajszűrés, kontrasztjavítás, körvonalak kiemelése).
+
+    Feladata a vizuális AI (pl. Gemini API vagy egy lokális látvány-modell) meghívása a megírt promptokkal és a fotókkal.
+
+    Célja, hogy a modul kimenete egy tiszta, strukturált JSON fájl legyen, amely tartalmazza az azonosított elemek (gomb, életerősáv) típusát, X/Y koordinátáit és méreteit.
+
+2. Személy: Pygame Kódgeneráló Motor (Az "Agy") - Ákos
+
+    Felelős a JSON adatok beolvasásáért és futtatható objektumorientált Python kódra fordításáért.
+
+    Létrehoz egy sablonrendszert, amely a koordinátákból dinamikusan generálja a Pygame Rect objektumokat és a pygame.draw utasításokat.
+
+    Kialakítja a kódszerkezetet úgy, hogy a kimenet egy tiszta, másik scriptbe könnyen importálható UI osztály legyen.
+
+3. Személy: Integráció és Tesztkörnyezet (A "Rendszergazda") - Zoli
+
+    Felelős a pipeline összekötéséért: egy közös indítószkript megírásáért, ami végigviszi az adatot a fotótól a futó kódig.
+
+    Kezeli a verziókövetést, összefésüli a modulokat, és kezeli a generálás során felmerülő kivételeket (hibás AI válaszok).
+
+    Ír egy alap Pygame főciklust (main loop), amely automatikusan betölti és egy ablakban azonnal meg is jeleníti a generált felületet a vizuális validáláshoz.
