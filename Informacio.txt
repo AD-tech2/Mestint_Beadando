@@ -1,0 +1,8 @@
+Integráció Zolinak:
+
+from code_generator import generate_pygame_ui
+generate_pygame_ui("layout.json", "generated_ui.py")
+
+# Runtime bar frissítés:
+ui.set_value_health_bar_1(42)
+state = ui.get_state()  # {'health_bar_1': {'value': 42, 'max_value': 100}, ...}

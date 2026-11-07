@@ -1,0 +1,216 @@
+{
+  "ui_name": "GameHUD",
+  "screen_width": 800,
+  "screen_height": 600,
+  "background_color": [
+    20,
+    20,
+    35
+  ],
+  "elements": [
+    {
+      "id": "health_bar_1",
+      "type": "health_bar",
+      "x": 20,
+      "y": 20,
+      "w": 220,
+      "h": 28,
+      "label": "HP",
+      "color": [
+        200,
+        30,
+        30
+      ],
+      "font_size": 18,
+      "value": 75,
+      "max_value": 100
+    },
+    {
+      "id": "mana_bar_1",
+      "type": "progress_bar",
+      "x": 20,
+      "y": 56,
+      "w": 220,
+      "h": 28,
+      "label": "MP",
+      "color": [
+        30,
+        80,
+        200
+      ],
+      "font_size": 18,
+      "value": 50,
+      "max_value": 100
+    },
+    {
+      "id": "xp_bar_1",
+      "type": "progress_bar",
+      "x": 20,
+      "y": 92,
+      "w": 220,
+      "h": 20,
+      "label": "XP",
+      "color": [
+        160,
+        100,
+        20
+      ],
+      "font_size": 16,
+      "value": 3200,
+      "max_value": 5000
+    },
+    {
+      "id": "game_title",
+      "type": "text_label",
+      "x": 300,
+      "y": 10,
+      "w": 200,
+      "h": 40,
+      "label": "DRAGON QUEST",
+      "color": [
+        255,
+        215,
+        0
+      ],
+      "font_size": 30
+    },
+    {
+      "id": "score_label",
+      "type": "text_label",
+      "x": 650,
+      "y": 10,
+      "w": 140,
+      "h": 30,
+      "label": "Score: 0",
+      "color": [
+        200,
+        200,
+        200
+      ],
+      "font_size": 20
+    },
+    {
+      "id": "hud_panel",
+      "type": "panel",
+      "x": 10,
+      "y": 10,
+      "w": 240,
+      "h": 120,
+      "color": [
+        30,
+        30,
+        60
+      ]
+    },
+    {
+      "id": "attack_btn",
+      "type": "button",
+      "x": 20,
+      "y": 530,
+      "w": 120,
+      "h": 50,
+      "label": "Attack",
+      "color": [
+        160,
+        30,
+        30
+      ],
+      "hover_color": [
+        220,
+        60,
+        60
+      ],
+      "font_size": 22
+    },
+    {
+      "id": "defend_btn",
+      "type": "button",
+      "x": 160,
+      "y": 530,
+      "w": 120,
+      "h": 50,
+      "label": "Defend",
+      "color": [
+        30,
+        100,
+        160
+      ],
+      "hover_color": [
+        60,
+        140,
+        220
+      ],
+      "font_size": 22
+    },
+    {
+      "id": "magic_btn",
+      "type": "button",
+      "x": 300,
+      "y": 530,
+      "w": 120,
+      "h": 50,
+      "label": "Magic",
+      "color": [
+        100,
+        30,
+        160
+      ],
+      "hover_color": [
+        150,
+        60,
+        220
+      ],
+      "font_size": 22
+    },
+    {
+      "id": "inventory_btn",
+      "type": "button",
+      "x": 440,
+      "y": 530,
+      "w": 140,
+      "h": 50,
+      "label": "Inventory",
+      "color": [
+        60,
+        100,
+        60
+      ],
+      "hover_color": [
+        90,
+        150,
+        90
+      ],
+      "font_size": 22
+    },
+    {
+      "id": "sword_icon",
+      "type": "icon",
+      "x": 650,
+      "y": 500,
+      "w": 60,
+      "h": 60,
+      "label": "SWD",
+      "color": [
+        130,
+        110,
+        50
+      ],
+      "font_size": 16
+    },
+    {
+      "id": "shield_icon",
+      "type": "icon",
+      "x": 720,
+      "y": 500,
+      "w": 60,
+      "h": 60,
+      "label": "SHD",
+      "color": [
+        50,
+        80,
+        130
+      ],
+      "font_size": 16
+    }
+  ]
+}
